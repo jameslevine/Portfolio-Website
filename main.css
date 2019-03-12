@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+.banner {
+  background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/41/chain-690088_1280.jpg);
+  height: 400px;
+}
+
+.navbar {
+  background-color: rgba(200, 200, 200, 0.3);
+  display: block;
+}
+
+.navbar-list {
+  display: block;
+  float: right;
+}
+
+.navbar-list_items {
+  display: inline;
+  list-style-type: none;
+}
