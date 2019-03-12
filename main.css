@@ -4,12 +4,19 @@ body {
 
 .banner {
   background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/41/chain-690088_1280.jpg);
-  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
   background-color: rgba(200, 200, 200, 0.3);
   display: block;
+  height: 100vh;
+}
+
+.navbar-slogan {
+  font-size: 10vw;
+  margin: 10vw;
 }
 
 .navbar-list {
@@ -20,4 +27,41 @@ body {
 .navbar-list_items {
   display: inline;
   list-style-type: none;
+  padding-right: 20px;
+}
+
+.navbar-circle {
+    width: 100px;
+    height: 50px; /* as the half of the width */
+    background-color: rgba(200, 200, 200, 0.4);
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid rgba(200, 200, 200, 0.4);
+    border-bottom: 0;
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50vw - 80px);
+}
+
+.navbar-circle__arrow {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 24%;
+  bottom: 5%;
+}
+
+.portfolio {
+  width: 100vw;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.portfolio-flexbox__cards {
+  width: 10vw;
+  height: 25vh;
+  background-color: grey;
 }
