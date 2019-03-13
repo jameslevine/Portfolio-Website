@@ -52,16 +52,19 @@ body {
 }
 
 .portfolio {
-  width: 100vw;
 }
 
-.flex-container {
+.portfolio-flexbox {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 10vw;
 }
 
 .portfolio-flexbox__cards {
-  width: 10vw;
+  flex: 0 1 calc(25% - 1em);
   height: 25vh;
   background-color: grey;
+  margin-top: 25vh;
+  border: 1 solid black;
 }
