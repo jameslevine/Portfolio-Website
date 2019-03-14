@@ -1,4 +1,4 @@
-var w = document.getElementById("demo");
+//var w = document.getElementById("demo");
 var x = document.getElementById("town");
 var y = document.getElementById("weather");
 var z = document.getElementById("temp");
@@ -12,8 +12,8 @@ function getLocation() {
 };
 
 function showPosition(position) {
-  w.innerHTML = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
+  //w.innerHTML = "Latitude: " + position.coords.latitude +
+  //"<br>Longitude: " + position.coords.longitude;
   var url = "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
   var request = new XMLHttpRequest();
   request.open('GET', url, true);

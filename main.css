@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .banner {
   background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/41/chain-690088_1280.jpg);
   background-repeat: no-repeat;
@@ -18,12 +22,12 @@ body {
   height: 100vh;
 }
 
-.navbar-image{
+.navbar-image {
   height: 10vh;
   width: 10vh;
   border-radius: 50%;
   border: 0.1em solid black;
-  margin: 0.2em 0em 0em 0.2em;
+  margin: 0.4em 0em 0em 0.4em;
 }
 
 .navbar-slogan {
@@ -40,6 +44,7 @@ body {
   display: inline;
   list-style-type: none;
   padding-right: 20px;
+
 }
 
 .navbar-weather {
@@ -51,6 +56,10 @@ body {
   display: inline;
   list-style-type: none;
   padding-right: 20px;
+}
+
+#demo {
+  display: none;
 }
 
 .navbar-circle {
@@ -76,22 +85,6 @@ body {
 
 .portfolio {
   height: 100vh;
-}
-
-.portfolio-flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20vh 10vw;
-}
-
-.portfolio-flexbox__cards {
-  flex: 0 1 calc(25% - 1em);
-  height: 25vh;
-  background-color: grey;
-  margin-top: 10vh;
-  /*margin-bottom: 10vh;*/
-  border: 1 solid black;
 }
 
 .portfolio-title {
@@ -123,11 +116,13 @@ body {
 }
 
 .about-image {
-  height: 60vh;
-  width: 60vh;
+  height: 40vw;
+  width: 40vw;
   border-radius: 50%;
   border: 0.25em solid black;
   top: 10vh;
+  margin-left: -20vw;
+  margin-top: 10vw;
 }
 
 .speech-bubble {
@@ -157,18 +152,45 @@ body {
   background-color: rgba(100, 100, 100, 1);
 }
 
-.links-flexbox {
+.card {
+  background-color: #fff;
+  min-width: 20vw;
+  min-height: 20vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20vh 10vw;
+  overflow-x: auto;
+  padding-right: 2em
 }
 
-.links-flexbox__cards {
-  flex: 0 1 calc(25% - 1em);
-  height: 25vh;
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card--content {
+  background-color: #e74c3c;
+  min-width: 20vw;
+  margin: 2em;
+  display: inline;
+  list-style-type: none;
+}
+
+.card--content:last-child {
+  margin-right: 2em;
+}
+
+.card-container {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+.card--content {
+  position: relative;
+}
+
+.card--content-words {
+  height: 20%;
+  width: 100%;
   background-color: grey;
-  margin-top: 10vh;
-  /*margin-bottom: 10vh;*/
-  border: 1 solid black;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
 }
