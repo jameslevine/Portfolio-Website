@@ -11,7 +11,7 @@ a {
 }
 
 .banner {
-  background-image: url(https://cdn.pixabay.com/photo/2015/03/26/09/41/chain-690088_1280.jpg);
+  background-image: url(./assets/bluesky.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -38,6 +38,7 @@ a {
 .navbar-list {
   display: block;
   float: right;
+  color: black;
 }
 
 .navbar-list_items {
@@ -116,13 +117,12 @@ a {
 }
 
 .about-image {
-  height: 40vw;
-  width: 40vw;
+  height: 30vw;
+  width: 30vw;
   border-radius: 50%;
   border: 0.25em solid black;
-  top: 10vh;
-  margin-left: -20vw;
-  margin-top: 10vw;
+  margin-left: -10vw;
+  margin-top: 0vw;
 }
 
 .speech-bubble {
