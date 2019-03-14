@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -12,6 +16,14 @@ body {
   background-color: rgba(200, 200, 200, 0.3);
   display: block;
   height: 100vh;
+}
+
+.navbar-image{
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  border: 0.1em solid black;
+  margin: 0.2em 0em 0em 0.2em;
 }
 
 .navbar-slogan {
@@ -30,6 +42,17 @@ body {
   padding-right: 20px;
 }
 
+.navbar-weather {
+  display: block;
+  float: right;
+}
+
+.navbar-weather__items {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
 .navbar-circle {
     width: 100px;
     height: 50px; /* as the half of the width */
@@ -40,7 +63,7 @@ body {
     border-bottom: 0;
     position: absolute;
     top: calc(100vh - 60px);
-    left: calc(50vw - 80px);
+    right: calc(0vw + 80px);
 }
 
 .navbar-circle__arrow {
@@ -52,19 +75,100 @@ body {
 }
 
 .portfolio {
+  height: 100vh;
 }
 
 .portfolio-flexbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 10vw;
+  margin: 20vh 10vw;
 }
 
 .portfolio-flexbox__cards {
   flex: 0 1 calc(25% - 1em);
   height: 25vh;
   background-color: grey;
-  margin-top: 25vh;
+  margin-top: 10vh;
+  /*margin-bottom: 10vh;*/
+  border: 1 solid black;
+}
+
+.portfolio-title {
+  font-size: 13vw;
+  position: relative;
+  margin-bottom: -5vh;
+  margin-bottom: -5vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /*background-color: rgba(200, 200, 200, 1);*/
+  background-color: #d6d6d6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23cdaeff' fill-opacity='0.58'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/*.about {
+  background-color: rgba(200, 200, 200, 1);
+}*/
+
+.about-title {
+  text-align: center;
+  font-size: 10vw;
+  margin-left: 10vw;
+}
+
+.about-image {
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  border: 0.25em solid black;
+  top: 10vh;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+  z-index: 1;
+}
+
+.speech-bubble:after {
+	content: 'hello world';
+	position: relative;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 2em solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -1em;
+	margin-left: -2em;
+}
+
+.links {
+  height: 100vh;
+  background-color: rgba(100, 100, 100, 1);
+}
+
+.links-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20vh 10vw;
+}
+
+.links-flexbox__cards {
+  flex: 0 1 calc(25% - 1em);
+  height: 25vh;
+  background-color: grey;
+  margin-top: 10vh;
+  /*margin-bottom: 10vh;*/
   border: 1 solid black;
 }
