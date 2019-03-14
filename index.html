@@ -5,25 +5,53 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
-  <body>
+  <body onload="getLocation()">
       <nav class="navbar banner">
-        <img class="navbar-image" src="https://img.icons8.com/ios/50/000000/logo.png" alt="">
+        <img class="navbar-image" src="./assets/portraitjames.jpg" alt="">
         <ul class="navbar-list">
           <li class="navbar-list_items"><a href="#">Home</a></li>
-          <li class="navbar-list_items"><a href="#">About</a></li>
-          <li class="navbar-list_items"><a href="#">Portfolio</a></li>
-          <li class="navbar-list_items"><a href="#">Links</a></li>
+          <li class="navbar-list_items"><a href="#about">About</a></li>
+          <li class="navbar-list_items"><a href="#portfolio">Portfolio</a></li>
+          <li class="navbar-list_items"><a href="#links">Links</a></li>
           <li class="navbar-list_items"><a href="#">Contact</a></li>
         </ul>
+        <div>
+          <ul class="navbar-weather">
+            <li id="demo" class="navbar-weather__items"></li>
+            <li id="town" class="navbar-weather__items"></li>
+            <li id="weather" class="navbar-weather__items"></li>
+            <li id="temp" class="navbar-weather__items"></li>
+          </ul>
+        </div>
         <h1 class="navbar-slogan">Hi, my name is James.</h1>
         <div class="navbar-circle"><img class="navbar-circle__arrow" src="https://image.flaticon.com/icons/svg/118/118738.svg" alt=""></div>
       </nav>
-      <div class="portfolio">
+      <div id="about" class="about-container">
+      <section class="about">
+        <h1 class="about-title">Story of my life.</h1>
+        <img class="about-image" src="./assets/portraitjames.jpg" alt="">
+        <div class="navbar-circle"><img class="navbar-circle__arrow" src="https://image.flaticon.com/icons/svg/118/118738.svg" alt=""></div>
+      </section>
+      </div>
+      <div id="portfolio" class="portfolio">
         <section class="portfolio-flexbox">
+          <h1 class="portfolio-title">My Portfolio</h1>
           <div class="portfolio-flexbox__cards">1</div>
           <div class="portfolio-flexbox__cards">2</div>
           <div class="portfolio-flexbox__cards">3</div>
           <div class="portfolio-flexbox__cards">4</div>
+          <div class="portfolio-flexbox__cards">5</div>
+          <div class="portfolio-flexbox__cards">6</div>
+          <div class="portfolio-flexbox__cards">7</div>
+          <div class="portfolio-flexbox__cards">8</div>
+        </section>
+      </div>
+      <div id="links" class="links">
+        <section class="links-flexbox">
+        <div class="links-flexbox__cards">1</div>
+        <div class="links-flexbox__cards">2</div>
+        <div class="links-flexbox__cards">3</div>
+        <div class="links-flexbox__cards">4</div>
         </section>
       </div>
   </body>
