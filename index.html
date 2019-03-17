@@ -9,6 +9,7 @@
 
 <body onload="getLocation()">
   <nav id="home" class="navbar banner">
+    <div class="navbar-container">
     <div class="logo-container">
     <img class="navbar-image" src="./assets/portraitjames.jpg" alt="">
     <section class="logo-flexbox">
@@ -27,7 +28,7 @@
         <li class="navbar-list_items"><a href="#links">Links</a></li>
         <li class="navbar-list_items"><a href="#">Contact</a></li>
       </ul>
-      <div class="hamburger-container" onclick="myFunction(this)" style="width:50px;height:50px">
+      <div class="hamburger-container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -41,6 +42,7 @@
           <li id="temp" class="navbar-weather__items"></li>
         </ul>
       </div>
+    </div>
     </div>
     <div class="homepage-flex-container">
     <h1 class="navbar-slogan">Hi, my name is<br />James.</h1>
@@ -147,5 +149,4 @@
   </a>
 </body>
 <script src="script.js"></script>
-
 </html>
