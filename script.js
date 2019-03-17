@@ -31,4 +31,9 @@ function showPosition(position) {
   }
   request.send();
   console.log(url);
-}
+};
+
+function myFunction(x) {
+  x.classList.toggle("change");
+  document.getElementsByClassName("navbar-list_items")[0].classList.toggle(".alter");
+};
