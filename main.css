@@ -8,6 +8,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .banner {
@@ -25,32 +26,93 @@ a {
 .navbar-image {
   height: 10vh;
   width: 10vh;
+  position: absolute;
   border-radius: 50%;
   border: 0.1em solid black;
   margin: 0.4em 0em 0em 0.4em;
 }
 
-.navbar-slogan {
-  font-size: 10vw;
-  margin: 10vw;
+.links-flexbox__cardstop {
+  opacity: 0;
+  margin-right: 5px;
 }
 
-.navbar-list {
-  display: block;
-  float: right;
-  color: black;
+.navbar-image:hover logo-flexbox > div{
+  opacity: 0.7;
+}
+
+.logo-flexbox {
+  position: relative;
+  display: flex;
+  left: 90px;
+  top: 20px;
+  align-items: center;
+}
+
+.logo-container {
+  width: 200px;
+}
+
+/*.links-flexbox__cards__one {
+  position: relative;
+}
+
+.links-flexbox__cards__two {
+  position: relative;
+}
+
+.links-flexbox__cards__three {
+  position: relative;
+}
+
+.links-flexbox__cards__four {
+  position: relative;
+}*/
+
+/*.links-flexbox__cardstop {
+  opacity: 0.7;
+}*/
+
+.links-flexbox__cards {
+  opacity: 0.7;
+}
+
+.links-flexbox > div:hover {
+  opacity: 1;
+}
+
+.logo-container:hover .logo-flexbox > div {
+  opacity: 0.7;
+}
+
+.navbar-slogan {
+  font-size: 10vw;
+  margin: 0vw;
+  padding-top: 200px;
+  padding-left: 50px;
 }
 
 .navbar-list_items {
   display: inline;
   list-style-type: none;
-  padding-right: 20px;
+  padding-right: 10px;
+  opacity: 1;
+}
 
+.navbarmenu-plushamburger {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .navbar-weather {
-  display: block;
-  float: right;
+  display: flex;
+  /*position: absolute;
+  top: 20px;
+  right: 20px;*/
+  align-items: center;
 }
 
 .navbar-weather__items {
@@ -63,19 +125,6 @@ a {
   display: none;
 }
 
-.navbar-circle {
-    width: 100px;
-    height: 50px; /* as the half of the width */
-    background-color: rgba(200, 200, 200, 0.4);
-    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    border-top-right-radius: 110px; /* 100px of height + 10px of border */
-    border: 10px solid rgba(200, 200, 200, 0.4);
-    border-bottom: 0;
-    position: absolute;
-    top: calc(100vh - 60px);
-    right: calc(0vw + 80px);
-}
-
 .navbar-circle__arrow {
   width: 50%;
   height: auto;
@@ -86,13 +135,16 @@ a {
 
 .portfolio {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio-title {
-  font-size: 13vw;
+  font-size: 8vw;
   position: relative;
-  margin-bottom: -5vh;
-  margin-bottom: -5vh;
+  margin-bottom: 0vh;
+  margin-top: 5vh;
+  margin-left: 10vh;
 }
 
 .about-container {
@@ -112,6 +164,7 @@ a {
 
 .about-title {
   text-align: center;
+  height: 7vw;
   font-size: 10vw;
   margin-left: 10vw;
 }
@@ -121,35 +174,37 @@ a {
   width: 30vw;
   border-radius: 50%;
   border: 0.25em solid black;
-  margin-left: -10vw;
-  margin-top: 0vw;
 }
 
-.speech-bubble {
-	position: relative;
-	background: #00aabb;
-	border-radius: .4em;
-  z-index: 1;
+@media only screen and (max-width: 600px) {
+  .about-image {
+    position: absolute;
+    left: -10000px;
+  }
 }
 
-.speech-bubble:after {
-	content: 'hello world';
-	position: relative;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 2em solid transparent;
-	border-right-color: #00aabb;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -1em;
-	margin-left: -2em;
+.about-imageblockquote {
+  display: flex;
+  font-size: 3vw;
+  height: 60vw;
+}
+
+.links-container {
+  background-color: rgba(100, 100, 100, 1);
+  height: 60px;
 }
 
 .links {
-  height: 100vh;
-  background-color: rgba(100, 100, 100, 1);
+  height: 8vw;
+  display: absolute;
+  top: 50px;
+}
+
+.links-flexbox {
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -167,8 +222,9 @@ a {
 
 .card--content {
   background-color: #e74c3c;
-  min-width: 20vw;
-  margin: 2em;
+  min-width: 200px;
+  min-height: 200px;
+  margin-right: 20px;
   display: inline;
   list-style-type: none;
 }
@@ -179,7 +235,7 @@ a {
 
 .card-container {
   margin-right: 2em;
-  margin-left: 2em;
+  margin-left: 0em;
 }
 
 .card--content {
@@ -193,4 +249,54 @@ a {
   position: absolute;
   bottom: 0px;
   text-align: center;
+}
+
+.backtotop {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 1;
+  bottom: 10px;
+  right: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.backtotop-arrow {
+  width: 50px;
+  height: 50px;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.alter {
+  opacity: 0;
 }
