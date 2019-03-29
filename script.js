@@ -35,5 +35,30 @@ function showPosition(position) {
 
 function myFunction(x) {
   x.classList.toggle("change");
-  document.getElementsByClassName("navbar-list_items")[0].classList.toggle(".alter");
+  document.getElementsByClasses("navbar-list").classList.toggle(".alter");
+  if (document.getElementById("navbar-list_items__one").style.opacity === 1) {
+  document.getElementById("navbar-list_items__one").style.opacity = 0;
+  // document.getElementById("navbar-list_items__one").style.opacity = 0;
+  // document.getElementById("navbar-list_items__one").style.opacity = 0;
+  // document.getElementById("navbar-list_items__one").style.opacity = 0;
+} else {
+  document.getElementById("navbar-list_items__one").style.opacity = 1;
+  //document.getElementById("navbar-list_items__one").style.opacity = 1;
+  // document.getElementById("navbar-list_items__one").style.opacity = 1;
+  // document.getElementById("navbar-list_items__one").style.opacity = 1;
+}
 };
+
+function groupProjectsFunc() {
+  console.log("this is a group project");
+  if (document.getElementById('portfolio').style.display === none) {
+    document.getElementById('portfolio').style.display = none;
+  }
+}
+
+function personalProjectsFunc() {
+  console.log("this is a personal project");
+  if (document.getElementById('groupportfolio').style.display === block) {
+    document.getElementById('groupportfolio').style.display = none;
+  }
+}
