@@ -22,7 +22,7 @@
     <div class="navbar-weather-container">
       <div class="navbarmenu-plushamburger">
       <ul class="navbar-list">
-        <li class="navbar-list_items"><a href="#">Home</a></li>
+        <li id="navbar-list_items__one" class="navbar-list_items"><a href="#">Home</a></li>
         <li class="navbar-list_items"><a href="#about">About</a></li>
         <li class="navbar-list_items"><a href="#portfolio">Portfolio</a></li>
         <li class="navbar-list_items"><a href="#links">Links</a></li>
@@ -66,71 +66,291 @@
       </div>
     </section>
   </div>
-  <div id="portfolio" class="portfolio">
-    <h1 class="portfolio-title">.My Portfolio</h1>
-    <div class="card-container">
-      <ul class="card">
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-      </ul>
+  <!-- <div id="portfolio" class="portfolio"> -->
+    <div class="portfolio-title-container">
+      <h1 class="portfolio-title">.My Portfolio</h1>
     </div>
-    <div class="card-container">
-      <ul class="card">
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-        <li class="card--content">
-          <div class="card--content-words">Hello World</div>
-        </li>
-      </ul>
+    <div class="portfolio-grouppersonalbuttons">
+      <button type="button" name="button" id="personal-button" class="personalprojects-button" onclick="personalProjectsFunc()">Personal Projects</button>
+      <button type="button" name="button" id="group-button" class="groupprojects-button" onclick="groupProjectsFunc()">Group Projects</button>
+    </div>
+    <div id="groupportfolio" class="groupportfolio">
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+    <div class="portfolio-project-overlay">
+      <h1 class="portfolio-projecttitle">Project 12</h1>
+      <div class="portfolio-project-imagecontainer">
+        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+      </div>
+    </div>
     </div>
   </div>
+    <div id="portfolio" class="portfolio">
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
+      </div>
+    </div>
+    <div class="responsive">
+      <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
+    <div class="portfolio-project-overlay">
+      <h1 class="portfolio-projecttitle">Project 12</h1>
+      <div class="portfolio-project-imagecontainer">
+        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+      </div>
+    </div>
+    </div>
+    <!-- <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
+    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive"> -->
 <div class="links-container">
   <div id="links" class="links">
     <section class="links-flexbox">
