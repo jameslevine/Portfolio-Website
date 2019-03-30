@@ -3,55 +3,77 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio Website</title>
+  <title>James' Portfolio</title>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="./assets/manifest.json">
+  <!-- <link rel="apple-touch-startup-image" href="./assets/launch.png"> -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body onload="getLocation()">
   <nav id="home" class="navbar banner">
     <div class="navbar-container">
-    <div class="logo-container">
-    <img class="navbar-image" src="./assets/portraitjames.jpg" alt="">
-    <section class="logo-flexbox">
-    <div class="links-flexbox__cards__one links-flexbox__cardstop"><a href="#"><img src="./assets/linkedin.png" alt="" style="width:50px;height:auto;"></a></div>
-    <div class="links-flexbox__cards__two links-flexbox__cardstop"><a href="#"><img src="./assets/freecodecamp.png" alt="" style="width:50px;height:auto;"></a></div>
-    <div class="links-flexbox__cards__three links-flexbox__cardstop"><a href="#"><img src="./assets/github-logo.png" alt="" style="width:50px;height:auto;"></a></div>
-    <div class="links-flexbox__cards__four links-flexbox__cardstop"><a href="#"><img src="./assets/cv.png" alt="" style="width:50px;height:auto;"></a></div>
-    </section>
-    </div>
-    <div class="navbar-weather-container">
-      <div class="navbarmenu-plushamburger">
-      <ul class="navbar-list" id="navbar-list">
-        <li id="navbar-list_items__one" class="navbar-list_items" style="opacity: 0"><a href="#">Home</a></li>
-        <li id="navbar-list_items__two" class="navbar-list_items" style="opacity: 0"><a href="#about">About</a></li>
-        <li id="navbar-list_items__three" class="navbar-list_items" style="opacity: 0"><a href="#portfolio">Portfolio</a></li>
-        <li id="navbar-list_items__four" class="navbar-list_items" style="opacity: 0"><a href="#links">Links</a></li>
-        <li id="navbar-list_items__five" class="navbar-list_items" style="opacity: 0"><a href="#">Contact</a></li>
-      </ul>
-      <div class="hamburger-container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div class="logo-container">
+        <img class="navbar-image" src="./assets/portraitjames.jpg" alt="">
+        <section class="logo-flexbox">
+          <div class="links-flexbox__cards__one links-flexbox__cardstop"><a href="#"><img src="./assets/linkedin.png" alt="" style="width:50px;height:auto;"></a></div>
+          <div class="links-flexbox__cards__two links-flexbox__cardstop"><a href="#"><img src="./assets/freecodecamp.png" alt="" style="width:50px;height:auto;"></a></div>
+          <div class="links-flexbox__cards__three links-flexbox__cardstop"><a href="#"><img src="./assets/github-logo.png" alt="" style="width:50px;height:auto;"></a></div>
+          <div class="links-flexbox__cards__four links-flexbox__cardstop"><a href="#"><img src="./assets/cv.png" alt="" style="width:50px;height:auto;"></a></div>
+        </section>
       </div>
+      <div class="navbar-weather-container">
+        <div class="navbarmenu-plushamburger">
+          <ul class="navbar-list" id="navbar-list">
+            <li id="navbar-list_items__one" class="navbar-list_items" style="opacity: 0"><a href="#">Home</a></li>
+            <li id="navbar-list_items__two" class="navbar-list_items" style="opacity: 0"><a href="#about">About</a></li>
+            <li id="navbar-list_items__three" class="navbar-list_items" style="opacity: 0"><a href="#portfolio">Portfolio</a></li>
+            <li id="navbar-list_items__four" class="navbar-list_items" style="opacity: 0"><a href="#links">Links</a></li>
+            <li id="navbar-list_items__five" class="navbar-list_items" style="opacity: 0"><a href="#">Contact</a></li>
+          </ul>
+          <div class="hamburger-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+        <div>
+          <ul class="navbar-weather">
+            <li id="demo" class="navbar-weather__items"></li>
+            <li id="town" class="navbar-weather__items"></li>
+            <li id="weather" class="navbar-weather__items"></li>
+            <li id="temp" class="navbar-weather__items"></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul class="navbar-weather">
-          <li id="demo" class="navbar-weather__items"></li>
-          <li id="town" class="navbar-weather__items"></li>
-          <li id="weather" class="navbar-weather__items"></li>
-          <li id="temp" class="navbar-weather__items"></li>
-        </ul>
-      </div>
-    </div>
     </div>
     <div class="homepage-flex-container">
-    <h1 class="navbar-slogan">Hi, my name is<br />James.</h1>
-        <section class="links-flexbox">
-          <div class="links-flexbox__cards"><a href="#"><img src="./assets/linkedin.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
-          <div class="links-flexbox__cards"><a href="#"><img src="./assets/freecodecamp.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
-          <div class="links-flexbox__cards"><a href="#"><img src="./assets/github-logo.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
-          <div class="links-flexbox__cards"><a href="#"><img src="./assets/cv.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
-        </section>
+<div class="typewriter-container">
+      <div class="typewriter">
+        <h1 class="navbar-slogan">Hi, my name is<br />James.</h1>
+      </div>
+      </div>
+      <section class="links-flexbox">
+        <div class="links-flexbox__cards"><a href="#"><img src="./assets/linkedin.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
+        <div class="links-flexbox__cards"><a href="#"><img src="./assets/freecodecamp.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
+        <div class="links-flexbox__cards"><a href="#"><img src="./assets/github-logo.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
+        <div class="links-flexbox__cards"><a href="#"><img src="./assets/cv.png" alt="" style="width:100px;height:auto;margin:10px;"></a></div>
+      </section>
     </div>
   </nav>
   <div id="about" class="about-container">
@@ -67,14 +89,16 @@
     </section>
   </div>
   <!-- <div id="portfolio" class="portfolio"> -->
-    <div class="portfolio-title-container">
-      <h1 class="portfolio-title">.My Portfolio</h1>
-    </div>
+  <div class="portfolio-title-container">
+    <h1 class="portfolio-title">.My Portfolio</h1>
     <div class="portfolio-grouppersonalbuttons">
       <button type="button" name="button" id="personal-button" class="personalprojects-button" onclick="personalProjectsFunc()">Show Group Projects</button>
-      <!-- <button type="button" name="button" id="group-button" class="groupprojects-button" onclick="groupProjectsFunc()">Group Projects</button> -->
     </div>
-    <div id="groupportfolio" class="groupportfolio" style="display: none;">
+  </div>
+  <!-- <div class="portfolio-grouppersonalbuttons">
+    <button type="button" name="button" id="personal-button" class="personalprojects-button" onclick="personalProjectsFunc()">Show Group Projects</button>
+  </div> -->
+  <div id="groupportfolio" class="groupportfolio" style="display: none;">
     <div class="responsive">
       <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
       <div class="portfolio-project-overlay">
@@ -198,17 +222,17 @@
     </div>
     <div class="responsive">
       <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
-    <div class="portfolio-project-overlay">
-      <h1 class="portfolio-projecttitle">Group Project 12</h1>
-      <div class="portfolio-project-imagecontainer">
-        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
-        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
-        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Group Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
       </div>
     </div>
-    </div>
   </div>
-    <div id="portfolio" class="">
+  <div id="portfolio" class="">
     <div class="responsive">
       <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
       <div class="portfolio-project-overlay">
@@ -332,41 +356,80 @@
     </div>
     <div class="responsive">
       <img src="./assets/portfolio2.jpg" alt="Nature" class="portfolio-image">
-    <div class="portfolio-project-overlay">
-      <h1 class="portfolio-projecttitle">Personal Project 12</h1>
-      <div class="portfolio-project-imagecontainer">
-        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
-        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
-        <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+      <div class="portfolio-project-overlay">
+        <h1 class="portfolio-projecttitle">Personal Project 12</h1>
+        <div class="portfolio-project-imagecontainer">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+          <img src="./assets/nodejslogo.png" alt="" class="portfolio-project-logo-image">
+        </div>
       </div>
     </div>
+    <div class="links-container">
     </div>
-    <!-- <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive">
-    <img src="./assets/portfolio2.jpg" alt="Nature" class="responsive"> -->
-<div class="links-container">
-  <div id="links" class="links">
-    <section class="links-flexbox">
-      <div class="links-flexbox__cards"><a href="#"><img src="./assets/linkedin.png" alt="" style="width:50px;height:auto;"></a></div>
-      <div class="links-flexbox__cards"><a href="#"><img src="./assets/freecodecamp.png" alt="" style="width:50px;height:auto;"></a></div>
-      <div class="links-flexbox__cards"><a href="#"><img src="./assets/github-logo.png" alt="" style="width:50px;height:auto;"></a></div>
-      <div class="links-flexbox__cards"><a href="#"><img src="./assets/mail.png" alt="" style="width:50px;height:auto;"></a></div>
-      <div class="links-flexbox__cards"><a href="#"><img src="./assets/cv.png" alt="" style="width:50px;height:auto;"></a></div>
-    </section>
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Site Index</h1>
+    <ul>
+      <li>Home</li>
+      <li>About Me</li>
+      <li>Projects</li>
+    </ul>
   </div>
+  <div class="col">
+    <h1>Top 5 Projects</h1>
+    <ul>
+      <li>Project 1</li>
+      <li>Project 2</li>
+      <li>Project 3</li>
+      <li>Project 4</li>
+      <li>Project 5</li>
+    </ul>
   </div>
-  <a href="#home">
-    <div class="backtotop">
-      <img class="backtotop-arrow" src="./assets/uparrow.svg" alt="">
-    </div>
-  </a>
+  <div class="col">
+    <h1>Accounts</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Resouces</h1>
+    <ul>
+      <li>Webmail</li>
+      <li>Redeem code</li>
+      <li>WHOIS lookup</li>
+      <li>Site map</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Contact</h1>
+    <ul>
+      <li>Email</li>
+      <li>Phone</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="./assets/freecodecamp.png" width="32" style="width: 32px;"></li>
+      <li><img src="./assets/freecodecamp.png" width="32" style="width: 32px;"></li>
+      <li><img src="./assets/linkedin.png" width="32" style="width: 32px;"></li>
+      <li><img src="./assets/freecodecamp.png" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+    <a href="#home">
+      <div class="backtotop">
+        <img class="backtotop-arrow" src="./assets/uparrow.svg" alt="">
+      </div>
+    </a>
 </body>
 <script src="script.js"></script>
 </html>

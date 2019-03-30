@@ -1,4 +1,3 @@
-//var w = document.getElementById("demo");
 var x = document.getElementById("town");
 var y = document.getElementById("weather");
 var z = document.getElementById("temp");
@@ -12,8 +11,6 @@ function getLocation() {
 };
 
 function showPosition(position) {
-  //w.innerHTML = "Latitude: " + position.coords.latitude +
-  //"<br>Longitude: " + position.coords.longitude;
   var url = "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
   var request = new XMLHttpRequest();
   request.open('GET', url, true);
@@ -33,7 +30,6 @@ function showPosition(position) {
 };
 
 function myFunction(x) {
-  // menuToggle();
   x.classList.toggle("change");
   if (document.getElementById("navbar-list_items__one").style.opacity === "0") {
     console.log("turning on");
@@ -63,8 +59,4 @@ function personalProjectsFunc() {
     document.getElementById('groupportfolio').style.display = "none";
     document.getElementById('personal-button').textContent = "Show Group Projects";
   }
-}
-
-function menuToggle() {
-  console.log ("toggling");
-}
+};
