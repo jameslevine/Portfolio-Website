@@ -49,16 +49,26 @@ function myFunction(x) {
 }
 };
 
-function groupProjectsFunc() {
-  console.log("this is a group project");
-  if (document.getElementById('portfolio').style.display === none) {
-    document.getElementById('portfolio').style.display = none;
-  }
-}
+// function groupProjectsFunc() {
+//   console.log("this is a group project");
+//   if (document.getElementById('portfolio').style.display === "block") {
+//     console.log("group block");
+//     document.getElementById('portfolio').style.display = "none";
+//   } else if (document.getElementById('portfolio').style.display === "none"){
+//     console.log("group none");
+//     document.getElementById('portfolio').style.display = "block";
+//   }
+// }
 
 function personalProjectsFunc() {
   console.log("this is a personal project");
-  if (document.getElementById('groupportfolio').style.display === block) {
-    document.getElementById('groupportfolio').style.display = none;
+  if (document.getElementById('groupportfolio').style.display === "none") {
+    console.log("group none");
+    document.getElementById('groupportfolio').style.display = "block";
+    document.getElementById('personal-button').textContent = "Show Personal Projects";
+  } else if (document.getElementById('groupportfolio').style.display === "block"){
+    console.log("group block");
+    document.getElementById('groupportfolio').style.display = "none";
+    document.getElementById('personal-button').textContent = "Show Group Projects";
   }
 }
