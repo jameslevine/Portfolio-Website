@@ -19,10 +19,9 @@ function showPosition(position) {
   request.open('GET', url, true);
   request.onload = function() {
     var data = JSON.parse(this.response);
-    console.log(data);
     x.innerHTML = data.name + ", " + data.sys.country;
     y.innerHTML = data.weather["0"].main;
-    z.innerHTML = data.main.temp + "°C";
+    z.innerHTML = data.main.temp.toString().split(".")[0] + "°C";
     if (request.status >= 200 && request.status < 400) {
         console.log("hello");
     } else {
@@ -34,31 +33,24 @@ function showPosition(position) {
 };
 
 function myFunction(x) {
+  // menuToggle();
   x.classList.toggle("change");
-  document.getElementsByClasses("navbar-list").classList.toggle(".alter");
-  if (document.getElementById("navbar-list_items__one").style.opacity === 1) {
-  document.getElementById("navbar-list_items__one").style.opacity = 0;
-  // document.getElementById("navbar-list_items__one").style.opacity = 0;
-  // document.getElementById("navbar-list_items__one").style.opacity = 0;
-  // document.getElementById("navbar-list_items__one").style.opacity = 0;
-} else {
-  document.getElementById("navbar-list_items__one").style.opacity = 1;
-  //document.getElementById("navbar-list_items__one").style.opacity = 1;
-  // document.getElementById("navbar-list_items__one").style.opacity = 1;
-  // document.getElementById("navbar-list_items__one").style.opacity = 1;
+  if (document.getElementById("navbar-list_items__one").style.opacity === "0") {
+    console.log("turning on");
+  document.getElementById("navbar-list_items__one").style.opacity = "1";
+  document.getElementById("navbar-list_items__two").style.opacity = "1";
+  document.getElementById("navbar-list_items__three").style.opacity = "1";
+  document.getElementById("navbar-list_items__four").style.opacity = "1";
+  document.getElementById("navbar-list_items__five").style.opacity = "1";
+} else if (document.getElementById("navbar-list_items__one").style.opacity === "1"){
+  console.log("turning off");
+  document.getElementById("navbar-list_items__one").style.opacity = "0";
+  document.getElementById("navbar-list_items__two").style.opacity = "0";
+  document.getElementById("navbar-list_items__three").style.opacity = "0";
+  document.getElementById("navbar-list_items__four").style.opacity = "0";
+  document.getElementById("navbar-list_items__five").style.opacity = "0";
 }
 };
-
-// function groupProjectsFunc() {
-//   console.log("this is a group project");
-//   if (document.getElementById('portfolio').style.display === "block") {
-//     console.log("group block");
-//     document.getElementById('portfolio').style.display = "none";
-//   } else if (document.getElementById('portfolio').style.display === "none"){
-//     console.log("group none");
-//     document.getElementById('portfolio').style.display = "block";
-//   }
-// }
 
 function personalProjectsFunc() {
   console.log("this is a personal project");
@@ -71,4 +63,8 @@ function personalProjectsFunc() {
     document.getElementById('groupportfolio').style.display = "none";
     document.getElementById('personal-button').textContent = "Show Group Projects";
   }
+}
+
+function menuToggle() {
+  console.log ("toggling");
 }
