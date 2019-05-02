@@ -53,10 +53,12 @@ function personalProjectsFunc() {
   if (document.getElementById('groupportfolio').style.display === "none") {
     console.log("group none");
     document.getElementById('groupportfolio').style.display = "block";
+    document.getElementById('portfolio').style.display = "none";
     document.getElementById('personal-button').textContent = "Show Personal Projects";
   } else if (document.getElementById('groupportfolio').style.display === "block"){
     console.log("group block");
     document.getElementById('groupportfolio').style.display = "none";
+    document.getElementById('portfolio').style.display = "block";
     document.getElementById('personal-button').textContent = "Show Group Projects";
   }
 };
