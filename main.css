@@ -493,10 +493,10 @@ h1 {
 
 .footer .col ul li {
   color: #999999;
-  font-size: 14px;
+  font-size: 10px;
   font-family: inherit;
   font-weight: bold;
-  padding: 5px 0px 5px 0px;
+  padding: 5px 5px 5px 0px;
   cursor: pointer;
   transition: .2s;
   -webkit-transition: .2s;
@@ -547,7 +547,7 @@ h1 {
   }
 
   .footer .col ul li {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
@@ -561,7 +561,7 @@ h1 {
   }
 
   .footer .col ul li {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
