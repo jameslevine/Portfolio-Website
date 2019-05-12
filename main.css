@@ -184,6 +184,9 @@ h1 {
   height: 30vw;
   width: 30vw;
   margin-left: 2vw;
+  margin-bottom: 2vh;
+  margin-right: 2vw;
+  float: left;
   border: 0.25em solid #070617;
 }
 
@@ -195,7 +198,7 @@ h1 {
 }
 
 .about-imageblockquote {
-  display: flex;
+  /* display: flex; */
   font-size: 2em;
   /* height: 60vw; */
 }
