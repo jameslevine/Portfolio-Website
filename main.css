@@ -342,7 +342,10 @@ h1 {
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
+
 
 .portfolio-projecttitle {
   z-index: 1;
@@ -363,6 +366,10 @@ h1 {
   height: 40px;
   position: relative;
   margin: 5px -20px 0px 20px;
+  background-color: black;
+  border-radius: 50%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   opacity: 0.8;
 }
 
@@ -371,8 +378,19 @@ h1 {
 }
 
 .logo-nodejs {
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
+}
+
+.responsive:hover .portfolio-image {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  border: 1px solid black;
+}
+
+.responsive:hover .portfolio-project-logo-image {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 /* .portfolio-project-logo-image:nth-child(1) {
@@ -581,6 +599,19 @@ h1 {
   width: 100px;
   height:auto;
   margin:10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-container {
+    height: auto;
+  }
+  .navbar {
+    height: auto;
+    padding-bottom: 10vh;
+  }
+  .about-image {
+    margin-bottom: 10vh;
+  }
 }
 
 @media only screen and (max-width: 700px) {
