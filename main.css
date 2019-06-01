@@ -7,6 +7,7 @@ body {
   background-image: url(./assets/pastelbluebackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 a {
@@ -40,8 +41,8 @@ h1 {
 }
 
 .navbar-image {
-  height: 10vh;
-  width: 10vh;
+  height: 80%;
+  width: auto;
   position: absolute;
   border-radius: 50%;
   border: 0.1em solid #070617;
@@ -54,7 +55,7 @@ h1 {
   z-index: 3;
 }
 
-.navbar-image:hover logo-flexbox>div {
+.navbar-image:hover logo-flexbox > div {
   opacity: 0.7;
 }
 
@@ -74,18 +75,18 @@ h1 {
   opacity: 0.7;
 }
 
-.links-flexbox>div:hover {
+.links-flexbox > div:hover {
   opacity: 1;
 }
 
 /* .navbar-list_items {
   opacity: 0.2;
 } */
-.links-flexbox>div:hover {
+.links-flexbox > div:hover {
   opacity: 1;
 }
 
-.logo-container:hover .logo-flexbox>div {
+.logo-container:hover .logo-flexbox > div {
   opacity: 0.7;
 }
 
@@ -165,7 +166,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   /*background-color: rgba(200, 200, 200, 1);*/
   background-color: #d6d6d6;
@@ -236,7 +237,7 @@ h1 {
   min-height: 20vw;
   display: flex;
   overflow-x: auto;
-  padding-right: 2em
+  padding-right: 2em;
 }
 
 .card::-webkit-scrollbar {
@@ -298,7 +299,9 @@ h1 {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: white;
@@ -345,7 +348,6 @@ h1 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
-
 
 .portfolio-projecttitle {
   z-index: 1;
@@ -435,40 +437,40 @@ h1 {
   box-shadow: 1px 1px;
 }
 
-.groupportfolio {}
+.groupportfolio {
+}
 
 .typewriter h1 {
   /* Web-safe typewriter-like font */
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #070617;
+  border-right: 0.15em solid #070617;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em;
+  letter-spacing: 0.1em;
   /* Adjust as needed */
-  animation:
-    typing 3.5s steps(30, end),
-    blinking-cursor .5s step-end infinite;
+  animation: typing 3.5s steps(30, end), blinking-cursor 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
 
 /* The typewriter cursor effect */
 @keyframes blinking-cursor {
-  from, to {
-    border-color: transparent
+  from,
+  to {
+    border-color: transparent;
   }
 
   50% {
@@ -503,7 +505,7 @@ h1 {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 0.250em;
+  letter-spacing: 0.25em;
 }
 
 .footer .col ul {
@@ -519,9 +521,9 @@ h1 {
   font-weight: bold;
   padding: 5px 5px 5px 0px;
   cursor: pointer;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
 }
 
 .social ul li {
@@ -531,9 +533,9 @@ h1 {
 
 .footer .col ul li:hover {
   color: #ffffff;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
 }
 
 .clearfix {
@@ -597,8 +599,8 @@ h1 {
 
 .links-flexbox__cards__image {
   width: 100px;
-  height:auto;
-  margin:10px;
+  height: auto;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -610,7 +612,7 @@ h1 {
     padding-bottom: 10vh;
   }
   .about-image {
-    margin-bottom: 10vh;
+    margin-bottom: 1vh;
   }
 }
 
